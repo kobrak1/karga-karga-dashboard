@@ -7,6 +7,7 @@ import { message } from 'antd';
 import './styles/globals.css'
 // components
 import Login from './components/Login.js'
+import Navbar from "./components/Navbar.js";
 
 // This is the child component
 export default function Home() {
@@ -79,8 +80,8 @@ export default function Home() {
 
   return (
     <>
+      <Navbar />
       <h2>{user.data.fullName} logged in successfully</h2>
-      <button onClick={() => handleLogout()} >logout</button>
     </>
   );
 }
