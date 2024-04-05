@@ -80,7 +80,7 @@ export default function Home() {
   return (
     <>
       <h2>{user.data.fullName} logged in successfully</h2>
-      <button onClick={() => handleLogout()}>logout</button>
+      <button onClick={() => handleLogout()} >logout</button>
     </>
   );
 }
