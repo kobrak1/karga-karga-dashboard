@@ -36,8 +36,6 @@ export default function Home() {
         password,
       })
 
-      console.log(user);
-
       window.localStorage.setItem('loggedUser', JSON.stringify(user))
       dashboardService.setToken(user.data.token)
 
